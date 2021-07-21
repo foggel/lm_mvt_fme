@@ -7,4 +7,14 @@ The tile service is an WMTS service offering a well known tilematrix for EPSG:38
 
 # Files
 https://github.com/foggel/lm_mvt_fme/blob/main/download_mvttileset.fmw: This workspace downloads a rectangular extent from to WMTS-service and writes the tiles to a local tileset
+
+**Parameters:**
+XMIN: Minimum X-coordinate for the extent to download
+YMIN: Minimum Y-coordinate for the extent to download
+XMAX: Maximum ..
+YMAX: Maximum ..
+TILEMATRIX: Zoomlevel, integer betten 14 and 17
+AUTH_USERNAME: Username for http basic authentication
+AUTH_PASSWORD: Password for http basic authentication
+
 https://github.com/foggel/lm_mvt_fme/blob/main/mvt_tileset_to_geojson.fmw: This workspace read a local tileset and convert it to GeoJson
